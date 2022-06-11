@@ -2,6 +2,10 @@
 
 :root {
   --bg-color: #232323;
+  --primary-color: #1e90ff;
+  --secondary-color: #a358e0;
+  --grey: #bbb;
+  --white: #fafafa;
 }
 
 * {
@@ -15,18 +19,13 @@ html {
 body {
   background-color: var(--bg-color);
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: var(--white);
   margin: 0;
 }
 
-nav {
-  margin: auto;
-}  
-
 h1{
   font-size: 4rem;
-}  
-
+}
 
 main {
   width: 100%;
@@ -37,7 +36,7 @@ main {
   width: 90%;
   max-width: 1200px;
   margin: auto;
-}  
+}
 
 .buttons{
   display: flex;
@@ -47,68 +46,36 @@ main {
   width: 25%;
   min-width: 300px;
   max-width: 1200px;
-}  
-
-.buttons-title{
-  justify-content: flex-start;
-  width: 60%;
-  margin: auto;
-}  
-
-.buttons-header{
-  margin-top: 5%;
-  margin-bottom: 5%;
-}  
+}
 
 button {
-  background-color: #1e90ff;
+  background-color: var(--primary-color);
   border: none;
   border-radius: 50%;
-  color: white;
+  color: var(--white);
   padding: 1rem;
   width: 10rem;
   height: 10rem;
   font-size: 4rem;
   cursor: pointer;
-  transition: all 0.3s ease-in-out; 
-}  
+  transition: all 0.3s ease-in-out;
+}
 
 button:hover {
   filter: brightness(.9);
-}  
-
-.button-header{
-  width: auto;
-  font-size: 2rem;
-  height: auto;
-  padding: 1.5rem 2rem;
-  border-radius: 5px;
-  border: none;
-  background-color: var(--bg-color);
-}  
-
-.button-header:hover{
-  background-color: lightgray;
-  color: black;
-}  
-
-.button-header.active{
-  color: black;
-  background-color: lightgray;
-}  
+}
 
 .button-reset, .button-stop{
   display: none;
 }
 
 .button-reset{
-  background-color: #a358e0;
+  background-color: var(--secondary-color);
 }
-
 
 .timer{
   margin-bottom: 15rem;
-}  
+}
 
 .timer-display{
   font-family: 'Roboto', sans-serif;
@@ -122,11 +89,33 @@ button:hover {
   width: 400px;
   height: 400px;
   max-width: 1200px;
-}  
+}
 
 .timer-display-text {
   font-size: 5rem;
   font-weight: bold;
   margin: auto;
   text-align: center;
-}  
+}
+
+/* Buttons hidden Start*/
+.button-header{
+  width: auto;
+  font-size: 2rem;
+  height: auto;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--bg-color);
+}
+
+.button-header:hover{
+  background-color: var(--grey);
+  color: var(--bg-color);
+}
+
+.button-header.active{
+  color: var(--bg-color);
+  background-color: var(--grey);
+}
+/* Buttons hidden End*/

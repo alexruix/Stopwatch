@@ -38,14 +38,6 @@ function formatTime(time) {
   return `0${time}`.slice(-2);
 }
 
-function hidden(btn){
-    `${btn}.style.display = "none"`;
-}
-
-function visible(btn){
-    `${btn}.style.display = "inline-block"`;
-}
-
 function stopChronometer() {
   clearInterval(currentTime);
   btnStart.style.display = "block";
