@@ -29,7 +29,7 @@ h1{
 
 main {
   width: 100%;
-  transform: translateY(25%);;
+  transform: translateY(5%);;
 }
 
 .container {
@@ -74,7 +74,7 @@ button:hover {
 }
 
 .timer{
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
 }
 
 .timer-display{
@@ -86,8 +86,8 @@ button:hover {
   font-size: 6rem;
   text-align: center;
   margin: auto;
-  width: 400px;
-  height: 400px;
+  width: 375px;
+  height: 375px;
   max-width: 1200px;
 }
 
