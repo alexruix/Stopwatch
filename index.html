@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer - #PlatziChallenge</title>
+    <link rel="stylesheet" href="./src/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/1db2702c51.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="container">
+      <nav></nav>
+      <div class="buttons buttons-title">
+        <h1 id="stopwatch">Stopwatch</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="timer">
+          <div class="timer-display">
+            <div class="timer-display-text">
+              <span class="timer-display-text-hours" id="hours">00</span>:
+              <span class="timer-display-text-minutes" id="minutes">00</span>:
+              <span class="timer-display-text-seconds" id="seconds">00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="button button-reset" id="reset">
+            <i class="fa-solid fa-rotate-left"></i>
+          </button>
+          <button class="button button-stop" id="stop">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="button button-start" id="start">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- <div class="buttons buttons-header">
+        <button class="button button-header active">Stopwatch</button>
+        <button class="button button-header">Alarm</button>
+        <button class="button button-header">Clock</button>
+        <button class="button button-header">Timer</button>
+      </div> -->
+    </main>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>

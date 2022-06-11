@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+
+:root {
+  --bg-color: #232323;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+}
+
+nav {
+  margin: auto;
+}  
+
+h1{
+  font-size: 4rem;
+}  
+
+
+main {
+  width: 100%;
+  transform: translateY(25%);;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}  
+
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  width: 25%;
+  min-width: 300px;
+  max-width: 1200px;
+}  
+
+.buttons-title{
+  justify-content: flex-start;
+  width: 60%;
+  margin: auto;
+}  
+
+.buttons-header{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}  
+
+button {
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 1rem;
+  width: 10rem;
+  height: 10rem;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+}  
+
+button:hover {
+  filter: brightness(.9);
+}  
+
+.button-header{
+  width: auto;
+  font-size: 2rem;
+  height: auto;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--bg-color);
+}  
+
+.button-header:hover{
+  background-color: lightgray;
+  color: black;
+}  
+
+.button-header.active{
+  color: black;
+  background-color: lightgray;
+}  
+
+.button-reset, .button-stop{
+  display: none;
+}
+
+.button-reset{
+  background-color: #a358e0;
+}
+
+
+.timer{
+  margin-bottom: 15rem;
+}  
+
+.timer-display{
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  border: 5px solid #555;
+  font-size: 6rem;
+  text-align: center;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  max-width: 1200px;
+}  
+
+.timer-display-text {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+}  
