@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
 
 :root {
   --bg-color: #232323;
@@ -23,29 +23,44 @@ body {
   margin: 0;
 }
 
-h1{
+h1 {
   font-size: 4rem;
 }
 
+h2{
+  font-size: 2rem;
+}
+
+
 main {
   width: 100%;
-  transform: translateY(25%);;
+  transform: translateY(5%);
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
 }
 
-.buttons{
+.wrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: auto;
-  width: 25%;
   min-width: 300px;
   max-width: 1200px;
+}
+
+.wrapper-title {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  min-width: 350px;
+}
+
+.wrapper-buttons{
+  width: 25%;
 }
 
 button {
@@ -62,33 +77,34 @@ button {
 }
 
 button:hover {
-  filter: brightness(.9);
+  filter: brightness(0.9);
 }
 
-.button-reset, .button-stop{
+.button-reset,
+.button-stop {
   display: none;
 }
 
-.button-reset{
+.button-reset {
   background-color: var(--secondary-color);
 }
 
-.timer{
-  margin-bottom: 15rem;
+.timer {
+  margin-bottom: 5rem;
 }
 
-.timer-display{
-  font-family: 'Roboto', sans-serif;
+.timer-display {
+  font-family: "Roboto", sans-serif;
   display: grid;
   place-content: center;
   border-radius: 50%;
   border: 5px solid #555;
   font-size: 6rem;
   text-align: center;
-  margin: auto;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   max-width: 1200px;
+  margin: auto;
 }
 
 .timer-display-text {
@@ -98,24 +114,83 @@ button:hover {
   text-align: center;
 }
 
-/* Buttons hidden Start*/
-.button-header{
-  width: auto;
+/* Timers tab*/
+.tabs-container {
+  width: 50%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% auto;
+  width: 100%;
+  min-width: 400px;
+  max-width: 1200px;
+  border-bottom: 1px solid #24385b;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 0.5rem;
+  text-transform: uppercase;
   font-size: 2rem;
-  height: auto;
-  padding: 1.5rem 2rem;
-  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.tab.active {
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+/* Timers tab*/
+
+/* Inputs */
+input{
+  outline: none;
+  margin: auto;
   border: none;
-  background-color: var(--bg-color);
+  border-radius: 0;
+  font-size: 2rem;
+  border-bottom: 1px solid #555;
+  text-align: center;
+  background: none;
+  color: var(--white);
 }
 
-.button-header:hover{
-  background-color: var(--grey);
-  color: var(--bg-color);
+.timer-title{
+  margin: auto;
+  width: 375px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
 }
 
-.button-header.active{
-  color: var(--bg-color);
-  background-color: var(--grey);
+.timer-group {
+  width: 375px;
 }
-/* Buttons hidden End*/
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 680px) {
+  .timer {
+    margin-bottom: 5rem;
+  }
+
+  .main {
+    transform: translateY(5%);
+  }
+
+  .tab{
+    letter-spacing: normal;
+  }
+}

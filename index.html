@@ -4,17 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timer - #PlatziChallenge</title>
+    <title>Timers - #PlatziChallenge</title>
     <link rel="stylesheet" href="./src/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/1db2702c51.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1db2702c51.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <header class="container">
-      <div class="buttons buttons-title">
-        <h1 id="stopwatch">Stopwatch</h1>
+      <div class="wrapper tabs-container">
+        <div class="tabs">
+          <div class="tab active" id="stopwatch-button">Stopwatch</div>
+          <div class="tab" id="alarm-button">Pomodoro</div>
+          <div class="tab" id="clock-button">Clock</div>
+          <div class="tab" id="timer-button">Timer</div>
+        </div>
+      </div>
+      <div class="wrapper wrapper-title">
+        <h1 id="title">Stopwatch
+        </h1>
+        <h2 id="subtitle"></h2>
       </div>
     </header>
 
@@ -30,7 +47,7 @@
           </div>
         </div>
 
-        <div class="buttons">
+        <div class="wrapper wrapper-buttons">
           <button class="button button-reset" id="reset">
             <i class="fa-solid fa-rotate-left"></i>
           </button>
@@ -42,14 +59,8 @@
           </button>
         </div>
       </div>
-
-      <!-- <div class="buttons buttons-header">
-        <button class="button button-header active">Stopwatch</button>
-        <button class="button button-header">Alarm</button>
-        <button class="button button-header">Clock</button>
-        <button class="button button-header">Timer</button>
-      </div> -->
     </main>
+
 
     <script src="./src/index.js"></script>
   </body>
