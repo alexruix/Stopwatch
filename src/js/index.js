@@ -77,8 +77,7 @@ function startStopwatch() {
 
 function stopStopwatch() {
   clearInterval(currentInterval);
-  btnStart.style.display = "block";
-  btnStop.style.display = "none";
+  stopBtn();
 }
 
 function resetStopwatch() {

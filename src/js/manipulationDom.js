@@ -165,6 +165,10 @@ function showStartBtn() {
   btnStop.style.display = "none";
   btnReset.style.display = "none";
 }
+function stopBtn(){
+  btnStart.style.display = "inline-block";
+  btnStop.style.display = "none";
+}
 //Set formatTime for text
 function formatSpan() {
   secondsSpan.textContent = formatTime(secondsValue);

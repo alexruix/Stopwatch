@@ -6,6 +6,8 @@
   --secondary-color: #a358e0;
   --grey: #bbb;
   --white: #fafafa;
+  --grey-color: #555;
+  --error-color: #f34040;
 }
 
 * {
@@ -21,6 +23,11 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--white);
   margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 #title {
@@ -39,16 +46,15 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  padding: 0 1.6rem;
+  max-width: 480px;
   margin: auto;
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: auto;
-  max-width: 480px;
+  align-items: center;  
   column-gap: 3rem;
 }
 
@@ -86,16 +92,13 @@ button:hover {
 
 .timer-display {
   font-family: "Roboto", sans-serif;
-  display: grid;
-  place-content: center;
-  border-radius: 50%;
-  border: 5px solid #555;
-  font-size: 6rem;
-  text-align: center;
   width: 350px;
   height: 350px;
-  max-width: 1200px;
   margin: auto;
+  display: grid;
+  border-radius: 50%;
+  border: 5px solid var(--grey-color);
+  text-align: center;
 }
 
 .timer {
@@ -104,7 +107,7 @@ button:hover {
 
 .timer-display-text {
   font-size: 5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin: auto;
   text-align: center;
 }
@@ -114,25 +117,22 @@ button:hover {
 }
 
 .error-text {
-  color: #f34040;
+  color: var(--error-color);
 }
 
-/* Timers tab*/
-
-.tabs {
+/*Tab*/
+.tab-container {
   display: flex;
   justify-content: space-between;
   margin: 10% auto;
   width: 100%;
-  max-width: 1200px;
   border-bottom: 1px solid #24385b;
 }
 
 .tab {
-  cursor: pointer;
-  padding: 0.5rem;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  padding: 0.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
 }
@@ -141,29 +141,16 @@ button:hover {
   border-bottom: 2px solid var(--primary-color);
   color: var(--primary-color);
 }
-/* Timers tab*/
 
 /* Inputs */
 input {
   outline: none;
   margin: auto;
   border: none;
-  border-radius: 0;
-  font-size: 2rem;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid var(--grey-color);
   text-align: center;
   background: none;
   color: var(--white);
-}
-
-.timer-title {
-  margin: auto;
-  width: 375px;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
 }
 
 input[type="number"] {
@@ -184,10 +171,7 @@ input:focus::placeholder {
   transition: opacity 0.3s;
 }
 
-
-
 /* Media Querys */
-
 @media screen and (max-width: 680px) {
   .timer {
     margin-bottom: 5rem;
@@ -197,14 +181,11 @@ input:focus::placeholder {
     transform: translateY(5%);
   }
 
-  .tab {
-    letter-spacing: normal;
-    font-size: 1rem;
-  }
   h1 {
     font-size: 3rem;
   }
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
