@@ -208,7 +208,7 @@ function excecuteAlarm() {
   minutesValue = formatTime(minutes);
 
   btnStart.addEventListener("click", continueTimer);
-  btnReset.addEventListener("click", resetStopwatch);
+  btnReset.addEventListener("click", excecuteAlarm);
   btnStop.addEventListener("click", stopStopwatch);
 }
 
