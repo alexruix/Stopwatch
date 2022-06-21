@@ -47,7 +47,7 @@ main {
 .container {
   width: 100%;
   padding: 0 1.6rem;
-  max-width: 480px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -56,6 +56,8 @@ main {
   justify-content: center;
   align-items: center;  
   column-gap: 3rem;
+  max-width: 500px;
+  margin: auto;
 }
 
 .wrapper-title {
@@ -92,8 +94,8 @@ button:hover {
 
 .timer-display {
   font-family: "Roboto", sans-serif;
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   margin: auto;
   display: grid;
   border-radius: 50%;
@@ -121,10 +123,13 @@ button:hover {
 }
 
 /*Tab*/
+
 .tab-container {
   display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
   justify-content: space-between;
-  margin: 10% auto;
+  margin: 1.6rem auto;
   width: 100%;
   border-bottom: 1px solid #24385b;
 }
@@ -181,10 +186,15 @@ input:focus::placeholder {
     transform: translateY(5%);
   }
 
+  .tab {
+    letter-spacing: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+
   h1 {
     font-size: 3rem;
   }
-
   h2 {
     font-size: 1.6rem;
   }
