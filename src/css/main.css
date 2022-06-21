@@ -127,7 +127,7 @@ button:hover {
 .tab-container {
   display: flex;
   overflow: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
   justify-content: space-between;
   margin: 1.6rem auto;
   width: 100%;
