@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timers - #PlatziChallenge</title>
-    <link rel="stylesheet" href="./src/main.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,39 +29,16 @@
         </div>
       </div>
       <div class="wrapper wrapper-title">
-        <h1 id="title">Stopwatch
-        </h1>
-        <h2 id="subtitle"></h2>
+        <h1 id="title"></h1>
+        <span id="subtitle"></span>
       </div>
     </header>
 
     <main class="main">
-      <div class="container">
-        <div class="timer">
-          <div class="timer-display">
-            <div class="timer-display-text">
-              <span class="timer-display-text-hours" id="hours">00</span>:
-              <span class="timer-display-text-minutes" id="minutes">00</span>:
-              <span class="timer-display-text-seconds" id="seconds">00</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="wrapper wrapper-buttons">
-          <button class="button button-reset" id="reset">
-            <i class="fa-solid fa-rotate-left"></i>
-          </button>
-          <button class="button button-stop" id="stop">
-            <i class="fa-solid fa-pause"></i>
-          </button>
-          <button class="button button-start" id="start">
-            <i class="fa-solid fa-play"></i>
-          </button>
-        </div>
-      </div>
+      <div class="container" id="container"></div>
     </main>
 
-
-    <script src="./src/index.js"></script>
+    <script src="./src/js/manipulationDom.js"></script>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
